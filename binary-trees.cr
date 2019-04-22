@@ -25,7 +25,8 @@ max_depth = min_depth + 2 if min_depth + 2 > max_depth
 
 stretch_depth = max_depth + 1
 stretch_tree = bottom_up_tree(stretch_depth)
-puts "stretch tree of depth #{stretch_depth}\t check: #{stretch_tree.item_check}"
+puts "stretch tree of depth #{stretch_depth}\t \
+        check: #{stretch_tree.item_check}"
 
 long_lived_tree = bottom_up_tree(max_depth)
 
@@ -39,6 +40,7 @@ min_depth.step(to: max_depth+1, by: 2) do |depth|
   puts "#{iterations}\t trees of depth #{depth}\t check: #{check}"
 end
 
-puts "long lived tree of depth #{max_depth}\t check: #{long_lived_tree.item_check}"
+puts "long lived tree of depth #{max_depth}\t \
+        check: #{long_lived_tree.item_check}"
 
 
